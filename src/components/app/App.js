@@ -35,7 +35,6 @@ class App extends Component {
     aNewItem["title"] = document.querySelector('#title').value;
     aNewItem["priority"] = document.querySelector('#priority').value;
     aNewItem["duDate"] = document.querySelector('#duDate').value;
-    aNewItem["percents"] = "0%";
     aNewItem["modified"] = date;
 
     let aStatus = document.querySelector('#status').value;
@@ -44,9 +43,11 @@ class App extends Component {
 
     if (aStatus == "Completed") {
       aNewItem["check"] = "true"
+      aNewItem["percents"] = "100%";
     }
     else {
       aNewItem["check"] = "false"
+      aNewItem["percents"] = "0%";
     }
 
     myTodos.unshift(aNewItem);
