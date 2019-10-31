@@ -1,0 +1,22 @@
+th {
+  outline: 1px solid #ccc;
+}
+
+.badge {
+  width: 100%;
+  padding: 1em;
+}
+
+.deleteTd {
+  margin-left: 0;
+  padding: 0;
+}
+
+.delete {
+  margin-left: 0;
+}
+
+.lined {
+  text-decoration: line-through;
+}
+/*# sourceMappingURL=todo.css.map */
